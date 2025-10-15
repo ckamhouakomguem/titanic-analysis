@@ -70,7 +70,6 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "2d920732517baff5e9876636c0306fa76232590e10fadb6733990a83a9902960",
     "uploadConnection": "Default (in DSS data dir.)",
     "notReadyIfEmpty": false,
     "sheetName": "__DKU_ALL__",
