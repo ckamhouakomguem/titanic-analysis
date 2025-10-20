@@ -129,6 +129,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "xAxisFormatting": {
           "displayAxis": true,
           "showAxisTitle": true,
@@ -158,6 +159,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -197,6 +199,7 @@
               "mode": "INTERVAL"
             },
             "customExtent": {
+              "editMode": "AUTO",
               "manualExtent": [
                 null,
                 null
@@ -235,6 +238,7 @@
               "mode": "INTERVAL"
             },
             "customExtent": {
+              "editMode": "AUTO",
               "manualExtent": [
                 null,
                 null
@@ -318,6 +322,7 @@
           },
           "customColors": {}
         },
+        "colorGroups": [],
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
@@ -406,8 +411,8 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
         },
         "radarOptions": {
           "filled": false,
@@ -559,8 +564,10 @@
             }
           },
           "horizontal": {
-            "show": false,
-            "displayAxis": {},
+            "show": true,
+            "displayAxis": {
+              "type": "LEFT_Y_AXIS"
+            },
             "lineFormatting": {
               "type": "FILLED",
               "color": "#d9d9d9",
