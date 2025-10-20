@@ -75,10 +75,10 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "stacked_columns",
-        "variant": "stacked_100",
+        "type": "grouped_columns",
+        "variant": "normal",
         "name": "New chart",
-        "userEditedName": false,
+        "userEditedName": true,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [],
         "genericDimension1": [],
@@ -555,6 +555,7 @@
           "columnIdByCustomExpandedStatus": {},
           "columnIdByCustomWidth": {}
         },
+        "referenceLines": [],
         "gridlinesOptions": {
           "vertical": {
             "show": false,
