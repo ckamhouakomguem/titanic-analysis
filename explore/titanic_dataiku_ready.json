@@ -80,7 +80,54 @@
         "name": "New chart",
         "userEditedName": true,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "numParams": {
+              "mode": "FIXED_NB",
+              "emptyBinsMode": "ZEROS",
+              "binSize": 100.0,
+              "niceBounds": false,
+              "customBinValues": [],
+              "nbBins": 10
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Survived, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "label": "Average of Survived, ascending"
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "column": "Pclass",
+            "type": "NUMERICAL"
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
@@ -100,6 +147,8 @@
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
             "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": "",
             "showValue": true,
             "showDisplayLabel": true,
             "labelPosition": "BOTTOM",
@@ -547,6 +596,7 @@
           },
           "displayPointer": false
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAADgElEQVR4Xu2czWsTQRiH35l8NDXR+kGkJqV69VJQEMWboBdtrHgQFL168CSSBo+5NiXmHxD/AA+CNhFqEcGDNz2JvWtaBSnag5Qm2Rm3tgfNRsgsyczO5JdrZvPOPM++7777kWWEj9MEmNOrw+IIgh3fCSAYgh0n4PjykMEQ7DgBx5eHDIZgxwk4vjxkMAQ7TsDx5fWdwRMP64cyrVaW82Sym0nbE3I7Od78sXBp03Fe1i2vb8H5Uv0CJ7rCSB7tXqUk6niMPV5fmH1nHQHHJ9y/4PnGLOd0k5PMBQRLapPnLX6uzq04zsu65UGwdcrUJgzBarysGw3B1ilTmzAEq/GybjQEW6dMbcIQrMbLutEQbJ0ytQlDsBov60ZDsHXK1CY88oLzpRfnOPHTPrbxADrJRFu0l79Vr31Swxqd0SMveKq4dItzNseIHQheY5fCI/lorVJ4HR1lajMZecHTpcYdH8J1YvJgj2vsnpSy8mWx8EoNa3RGQzAE7+6NeUfvJiGD96oNBEen7KrMBCUaJRolGk2WxU904BiMYzBOkyQyWKXv0ToWTRaaLDRZaLJQorWWXZVgKNEo0SjRKNEo0SpVU+tYlGiLSnR2vjGZZOyEFCLTay/Z9uTqRq2w7n/n/11s9wPBFgnOPaifj8fpqu8v8P+wHZmC05Nm6v1bKpcFBO8RsOlS5XSxfpE43WaMjvfK4I4Q1bX0h5cQ/BcdCMa16Mhci0YGh+hPkcHIYGQw7iaFKB0hNkGJDgPNotMkCIZgnCZ17wNostBkoclCkxXi2BBiExyDw0BDk4X7wVG5H4wMRgaji0YX/Z8swJ/PQpSHAW8y1BI9VXw+Q5ydYYxNdM+bSSnaxJe/VmZXB7ymof/cn1c4SH6KuAy+wkFI2RYiMq9wOHb/2cl4In7W93C4FxjZ4ivN2uWP/nMc6k905O4u7RNHYunO1lY8IDiRkmOdX5vN2o2toRsZcIDsvacZlhhLC9bx35b874dFbV3lN6nJje/7O7FYwMHOzFPM+9ntoO9HdgbMFT+niQAEawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKgwEmyKvKS4EawJtKsxvJaqWjeMglTAAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -810,14 +860,112 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Avg of Survived by Sex",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "numParams": {
+              "mode": "FIXED_NB",
+              "emptyBinsMode": "ZEROS",
+              "binSize": 1.0,
+              "niceBounds": false,
+              "customBinValues": [],
+              "nbBins": 10
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Survived, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "label": "Average of Survived, ascending"
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Survived, descending"
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "column": "Sex",
+            "type": "ALPHANUM"
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "Survived",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true,
+            "showValue": true,
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "labelFontSize": 16,
+            "percentile": 50.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "kpiValueFontSizeMode": "RESPONSIVE",
+            "kpiValueFontSize": 32,
+            "responsiveTextAreaFill": 100,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333333",
+              "hasBackground": false,
+              "fontFamily": "SourceSansPro"
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333333",
+              "hasBackground": false,
+              "fontFamily": "SourceSansPro"
+            },
+            "valuesInChartDisplayOptions": {
+              "displayValues": true,
+              "textFormatting": {
+                "fontSize": 11,
+                "fontColor": "AUTO",
+                "hasBackground": false,
+                "backgroundColor": "#D9D9D9BF"
+              },
+              "addDetails": false,
+              "additionalMeasures": []
+            },
+            "colorRules": []
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -862,7 +1010,25 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "ALPHANUM_FACET",
+            "filterSelectionType": "MULTI_SELECT",
+            "facetSorting": "COUNT_DESC",
+            "id": "1760967495539_3",
+            "column": "Sex",
+            "label": "Sex",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {},
+            "isAGlobalFilter": false,
+            "useMinimalUi": false,
+            "excludeOtherValues": false,
+            "allValuesInSample": false,
+            "active": true,
+            "includeEmptyValues": true
+          }
+        ],
         "xAxisFormatting": {
           "displayAxis": true,
           "showAxisTitle": true,
@@ -1010,6 +1176,7 @@
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
+          "spacing": 2,
           "placementMode": "AUTO",
           "textFormatting": {
             "fontSize": 11,
@@ -1211,6 +1378,7 @@
           },
           "displayPointer": false
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAADAklEQVR4Xu2cv2sUQRxHZ3ePDQSMBAJq1IilWAm2op1CFCzE0s5GsBAl11oKhqvFylqx0AupApK/QAsb7XJ6hz8KSdTEGG/HK6KSQpi77Hw/YXipvzsv897OJNVmjp+kDWRJ747NOQIn/hIQmMCJG0h8e5xgAiduIPHtcYIJnLiBxLfHCSZw4gYS316tJ/jIrfbhrMgmVc7WGq67eu/iFxV/L3JrDTzTbF933p1RbbRf+UfdlR/L7snVvup32GvcegPPLTSzzF1QbdL381Zn5dsigf8VILDqbTTiEthItApDYJV5Iy6BjUSrMARWmTfiEthItApDYJV5Iy6BjUSrMARWmTfiEthItApDYJV5Iy6BjUSrMARWmTfiEthItApDYJV5Iy6BjUSrMARWmTfiEthItApDYJV5Iy6BjUSrMARWmTfiEthItApDYJV5Iy6BjUSrMARWmTfiEthItApDYJV5Iy6BjUSrMARWmTfiEthItApDYJV5Iy6BjUSrMAQOMX9zcexQ6Q9WW5v7QsbrnvFj2Ubmv374OH/t+7BrEzjA2NTcs+lx17jiXHUiYDzGSKf/K3/abc2+HXZxAgcYO3Dn+fGyyG/kzp0OGK99xFfZm8FHRx5078++GnZxAgcYI/C2pJlEP8JCYAIH3AOjj3BFb7uL9RklTjAnePTjGfAkJ5gT/N/XhP+iA04QVzRXdMBrMvoIVzRXtM0VfbS5cN45f3L0d3V3T/p+tfR+/uVr5+5Wu1tp59PTt9tTeZ6fzfLqWJ3rhq412NenqvLLvdbld6HP/Jmr9W/wZPPx/mKzGB/2l6hrvlwvV3sPL63Xtd7fdc69aEyc+jxR+mKs9rUDFiyLcqvX2VgbfEX3Z8D4jpFaAw8LZz6+AQLHdywlEFiqPz6cwPEdSwkEluqPDydwfMdSAoGl+uPDCRzfsZRAYKn++HACx3csJRBYqj8+nMDxHUsJBJbqjw8ncHzHUgKBpfrjwwkc37GUQGCp/vhwAsd3LCUQWKo/PpzA8R1LCb8B1eRtb+e8AsAAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
