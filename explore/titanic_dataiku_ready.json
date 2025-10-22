@@ -1233,6 +1233,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -1689,6 +1690,8 @@
               "label": "Natural ordering",
               "sortAscending": true
             },
+            "prefix": "",
+            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -1737,6 +1740,8 @@
               "measureIdx": 0,
               "label": "Average of Survived, descending"
             },
+            "prefix": "",
+            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -1764,6 +1769,8 @@
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
             "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": "",
             "showValue": true,
             "showDisplayLabel": true,
             "labelPosition": "BOTTOM",
@@ -2043,6 +2050,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
